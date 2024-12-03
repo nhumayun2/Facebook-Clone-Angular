@@ -1,0 +1,76 @@
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left Section: Logo and Search -->
+      <div class="flex items-center space-x-4 ml-4">
+        <!-- Logo -->
+        <a href="/" class="text-blue-600 text-xl font-bold">Facebook</a>
+  
+        <!-- Search Box -->
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search"
+            class="bg-gray-100 text-gray-600 rounded-full px-4 py-2 w-60 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <span class="absolute top-1/2 transform -translate-y-1/2 right-3 text-gray-400">
+            🔍
+          </span>
+        </div>
+      </div>
+  
+      <!-- Center Section: Navigation Links -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex space-x-4">
+        <a
+          routerLink="/NewsfeedComponent"
+          href="#"
+          class="text-gray-600 hover:text-blue-600 px-4 py-2 rounded-md transition"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-blue-600 px-4 py-2 rounded-md transition"
+        >
+          Watch
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-blue-600 px-4 py-2 rounded-md transition"
+        >
+          Marketplace
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-blue-600 px-4 py-2 rounded-md transition"
+        >
+          Groups
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-blue-600 px-4 py-2 rounded-md transition"
+        >
+          Gaming
+        </a>
+      </div>
+  
+      <!-- Right Section: Profile, Notifications, and Options -->
+      <div class="flex items-center space-x-4 mr-4">
+        <!-- Notifications -->
+        <button class="text-gray-600 hover:text-blue-600 relative">
+          <img src="images/notification.png" alt="Notification" class="w-8 h-8">
+        </button>
+  
+        <!-- Option Button -->
+        <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 rounded-full px-2 py-2">
+          <img src="images/dots-menu.png" alt="dots-menu" class="w-6 h-6">
+        </button>
+  
+        <!-- Profile -->
+        <img
+          src="images/profilePic.jpg"
+          alt="Profile"
+          class="w-10 h-10 rounded-full"
+        />
+      </div>
+    </div>
+  </nav>
