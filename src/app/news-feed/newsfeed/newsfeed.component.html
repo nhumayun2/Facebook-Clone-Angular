@@ -3,20 +3,31 @@
     <div class="w-1/4 p-4">
         <!-- Left Sidebar -->
         <div class="space-y-4">
-            <div class="bg-white p-4 rounded-lg shadow">
+            <a routerLink="/profile" href="">
+                <div class="bg-white p-4 rounded-lg hover:shadow-lg transition-shadow flex items-center space-x-4">
+                    <img src="images/profilePic.jpg" alt="" class="w-10 h-10 rounded-full nav-button">
+                    
+                    <!-- Profile content -->
+    
+                    <h2 class="font-bold">Humayun Ahmed Niloy</h2>
+                    <!-- Profile content -->
+                </div>
+            </a>
+            <div class="bg-white p-4 rounded-lg hover:shadow-lg transition-shadow">
                 <h2 class="font-bold">Memories</h2>
                 <!-- Profile content -->
             </div>
-            <div class="bg-white p-4 rounded-lg shadow">
+            <div class="bg-white p-4 rounded-lg hover:shadow-lg transition-shadow">
                 <h2 class="font-bold">Friends</h2>
                 <!-- Friends content -->
             </div>
-            <div class="bg-white p-4 rounded-lg shadow">
+            <div class="bg-white p-4 rounded-lg hover:shadow-lg transition-shadow">
                 <h2 class="font-bold">Saved</h2>
                 <!-- Groups content -->
             </div>
         </div>
     </div>
+    
     <div class="w-1/2 p-4">
         <!-- Main Content -->
         <div class="bg-white p-4 rounded-lg shadow mb-8">
@@ -59,7 +70,7 @@
         <div class="bg-white p-4 rounded-lg shadow mt-8">
             <div class="flex items-center space-x-4">
                 <img src="images/profilePic.jpg" alt="Profile Picture" class="w-12 h-12 rounded-full">
-                <input (click)="openCreatePostModal()" type="text" placeholder="What's on your mind?" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300">
+                <input (click)="openCreatePostModal(inputField)" [(ngModel)]="currentInput" type="text" placeholder="What's on your mind?" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300" #inputField>
             </div>
             <div class="flex justify-around mt-4 border-t pt-2">
                 <button class="flex items-center space-x-2 text-blue-500 hover:text-blue-600">

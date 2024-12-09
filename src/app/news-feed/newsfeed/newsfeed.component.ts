@@ -3,17 +3,20 @@ import { NavBarComponent } from "../../Repeted-Elements/Nav-bar/nav-bar/nav-bar.
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CreatePost } from '../../models/interfaces/create-post';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-newsfeed',
   standalone: true,
-  imports: [NavBarComponent,CommonModule, FormsModule],
+  imports: [NavBarComponent,CommonModule, FormsModule, RouterLink],
   templateUrl: './newsfeed.component.html',
   styleUrl: './newsfeed.component.css'
 })
 export class NewsfeedComponent {
 
   title = 'News Feed';
+  
+  currentInput = '';
 
   currentPost : CreatePost = {
     description: '',
@@ -43,7 +46,7 @@ export class NewsfeedComponent {
 
    isCreatePostModalOpen = false;
 
-  openCreatePostModal() {
+  openCreatePostModal(inputField: HTMLInputElement) {
     this.isCreatePostModalOpen = true;
   }
 
@@ -58,6 +61,7 @@ export class NewsfeedComponent {
     console.log(this.allPostList);
     this.closeCreatePostModal(); // Close the modal after creating the post
     //this.emptyPost(); // Empty the post after creating the post
+    this.currentInput = '';
   }
 
   emptyPost(){

@@ -1,0 +1,129 @@
+<div class="bg-gray-100 min-h-screen">
+    <!-- White Container for Cover Photo, Profile Info, and Navigation Tabs -->
+    <div class="bg-white shadow-lg rounded-lg mx-auto max-w-5xl">
+        <!-- Cover Photo Section -->
+        <div class="relative bg-gray-300 w-full h-96 rounded-t-lg">
+            <img src="images/cover.jpg" alt="Cover Photo" class="w-full h-full object-cover" />
+
+            <!-- Profile Picture -->
+            <div class="absolute -bottom-12 left-6">
+                <img src="images/profilePic.jpg" alt="Profile Picture" class="w-36 h-36 rounded-full border-4 border-white" />
+            </div>
+        </div>
+
+        <!-- Profile Info and Action Buttons -->
+        <div class="pt-16 pb-6 px-6">
+            <div class="flex justify-between items-center">
+                <!-- Profile Info Section -->
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Humayun Ahmed Niloy</h1>
+                        <p class="text-sm text-gray-500">Made in China</p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex space-x-4">
+                    <button class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700">
+                        + Add to story
+                    </button>
+                    <button class="px-4 py-2 bg-gray-300 font-semibold rounded-md shadow hover:bg-gray-400">
+                        Edit Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="border-t border-gray-300">
+            <div class="flex justify-start space-x-8 text-gray-600 font-medium py-4">
+                <button class="pl-6 hover:text-blue-600">Posts</button>
+                <button class="hover:text-blue-600">About</button>
+                <button class="hover:text-blue-600">Friends</button>
+                <button class="hover:text-blue-600">Photos</button>
+                <button class="hover:text-blue-600">Videos</button>
+                <button class="hover:text-blue-600">More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Section -->
+    <div class="max-w-5xl mx-auto mt-6 flex space-x-6">
+        <!-- Left Section -->
+        <div class="w-1/3 space-y-6">
+            <!-- Intro Section -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-lg font-bold">Intro</h2>
+                <p class="mt-2">This is facebook clone project. </p>
+            </div>
+
+            <!-- Photos Section -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-lg font-bold">Photos</h2>
+                <div class="grid grid-cols-3 gap-2 mt-2">
+                    <img src="images/photo1.jpg" alt="Photo 1" class="w-full h-24 object-cover rounded-md" />
+                    <img src="images/photo2.jpg" alt="Photo 2" class="w-full h-24 object-cover rounded-md" />
+                    <img src="images/photo3.jpg" alt="Photo 3" class="w-full h-24 object-cover rounded-md" />
+                </div>
+            </div>
+
+            <!-- Friends Section -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-lg font-bold">Friends</h2>
+                <div class="space-y-2 mt-2">
+                    <div class="flex items-center space-x-2">
+                        <img src="images/friend1.jpg" alt="Friend 1" class="w-12 h-12 rounded-full" />
+                        <p class="font-semibold">Friend 1</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="images/friend2.jpg" alt="Friend 2" class="w-12 h-12 rounded-full" />
+                        <p class="font-semibold">Friend 2</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="images/friend3.jpg" alt="Friend 3" class="w-12 h-12 rounded-full" />
+                        <p class="font-semibold">Friend 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+            <div class="w-2/3 space-y-6">
+                <!-- Create Post Section -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-lg font-bold">Create Post</h2>
+                    <input type="text" placeholder="What's on your mind?" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300" #inputField>
+                <div class="flex justify-end mt-2">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">Post</button>
+                </div>
+            </div>
+
+            <!-- Existing Posts -->
+            <div class="bg-white p-4 rounded-lg shadow mt-8">
+                <div class="flex items-center space-x-4">
+                    <img src="images/profilePic.jpg" alt="Profile Picture" class="w-12 h-12 rounded-full">
+                    <div>
+                        <h2 class="font-bold">Humayun Ahmed</h2>
+                        <p class="text-gray-600"></p>
+                    </div>
+                </div>
+                <p class="mt-4"></p>
+                <div class="flex justify-around mt-4 border-t pt-4">
+                    <button class="flex items-center justify-center w-1/4 py-2 text-blue-500 hover:bg-gray-100 rounded-lg transition">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span class="ml-2">👍Like</span>
+                    </button>
+                    <button class="flex items-center justify-center w-1/4 py-2 text-gray-500 hover:bg-gray-100 rounded-lg transition">
+                        <i class="fas fa-comment"></i>
+                        <span class="ml-2">💬Comment</span>
+                    </button>
+                    <button class="flex items-center justify-center w-1/4 py-2 text-green-500 hover:bg-gray-100 rounded-lg transition">
+                        <i class="fas fa-share"></i>
+                        <span class="ml-2">🤝Share</span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        <div>
+    </div>
+</div>
